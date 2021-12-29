@@ -1,26 +1,60 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
 .legend {
   display:flex;
   width: 20%;
+  padding: 2px;
+  margin-left: 25%;
+  padding-bottom: 2%;
 }
 .legendNavy {
-  width:2%;
+  width:5%;
   background-color: #092961;
+  
 }
 .legendGrey {
-  width:2%;
+  width:5%;
   background-color: #a4b2c8;
+  
 }
 .legendBlue {
-  width:2%;
+  width: 5%;
   background-color: #4199d2;
+  
+}
+.legendItems {
+  padding-left: 1%;
+  padding-right: 10%;
 }
 
-  hr.thin {
+.numbersAboveLine {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 70%;
+  padding: 0;
+  
+}
+p {
+  padding-bottom: 0;
+  margin: 0;
+}
+.title {
+  margin-left: 45%;
+  padding-bottom: 1%;
+  font-size: 15px;
+}
+hr.thin {
     height: 1.5px;
     border: 0;
     color: grey;
     background-color: grey;
     width: 50%;
+    padding-top: 0%;
     }
 
 .container {
@@ -32,7 +66,7 @@
 }
 
 .navy{
-  width: 25%;
+  width: 24%;
   background-color: #092961;
 }
 .grey {
@@ -40,6 +74,6 @@
   background-color: #a4b2c8 ;
 }
 .aquamarine{
-  width: 50%;
+  width: 51%;
   background-color: #4199d2 ;
 }
