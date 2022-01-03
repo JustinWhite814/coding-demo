@@ -64,8 +64,11 @@ hr.thin {
   margin: auto;
   padding-top: 10px;
 }
-
-.navy{
+.displayBar {
+  display: flex;
+  margin: auto;
+}
+/* .navy{
   width: 24%;
   background-color: #092961;
 }
@@ -76,4 +79,4 @@ hr.thin {
 .aquamarine{
   width: 51%;
   background-color: #4199d2 ;
-}
+} */
