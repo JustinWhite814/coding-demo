@@ -2,10 +2,10 @@ import React from 'react';
 import AdultData from './adultData'
 import ChildrenData from './childrenData';
 import TeenagersData from './teenagersData';
-function data(props) {
+
+const data = () => {
   return (
     <div>
-      
       <AdultData/> 
       <ChildrenData />
       <TeenagersData />

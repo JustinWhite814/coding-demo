@@ -1,11 +1,11 @@
 import React from 'react';
 
-function childrenData(props) {
+const childrenData = () => {
   const navy = {
       width: "25%",
       backgroundColor: "#092961"
   };
-const grey =  {
+  const grey =  {
     width: "25%",
     backgroundColor: "#a4b2c8"
   }

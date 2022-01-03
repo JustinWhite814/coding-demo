@@ -1,6 +1,6 @@
 import React from 'react';
 
-function legend(props) {
+const legend = () => {
   return (
     <div className='legend'>
       <p className='legendNavy'></p><p className='legendItems'>Fruits/Vegetables</p> 
