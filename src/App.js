@@ -1,11 +1,8 @@
 import React, {useState} from 'react'
 import './App.css';
-import Data from './components/data';
-import ChildrenData from './components/childrenData';
-import TeenagersData from './components/teenagersData';
-import AdultData from './components/adultData'
 import Legend from './components/legend'
 import {Select, MenuItem, FormControl, InputLabel, makeStyles} from "@material-ui/core"
+import BarGraph from './components/BarGraph'
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -13,23 +10,33 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const components = {
-  All: Data,
-  Adults: AdultData,
-  Teenagers: TeenagersData,
-  Children: ChildrenData,
+const fakeData = {
+  Adults: {
+    fruits: .25,
+    grains: .25,
+    proteins: .5
+  },
+  Teenagers: {
+    fruits: .26,
+    grains: .26,
+    proteins: .48
+  },
+  Children: {
+    fruits: .27,
+    grains: .27,
+    proteins: .46
+  },
 }
 
 const App = () => {
   const classes = useStyles()
   const [value, setValue] = useState('All')
   const handleChange = e => setValue(e.target.value)
-  const Component = components[value]
+  const data = fakeData[value]
   
   return (
     <div>
       <div className='displayBar'>
-        <div>Sidebar</div>
         <FormControl className = {classes.formControl}>
           <InputLabel>Display</InputLabel>
           <Select onChange={handleChange} value={value}>
@@ -48,7 +55,15 @@ const App = () => {
         <p>100%</p>
       </div>
       <div className='thin'/>
-      <div><Component /></div>
+      <div>
+        {value === 'All' ? (
+          <>
+            <BarGraph label="Adults" data={fakeData.Adults} />
+            <BarGraph label="Teenagers" data={fakeData.Teenagers} />
+            <BarGraph label="Children" data={fakeData.Children} />
+          </>
+        ) : <BarGraph label={value} data={data} />}
+      </div>
     </div>
   );
 }

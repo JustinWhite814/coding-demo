@@ -16,9 +16,7 @@ const adultBar = () => {
     backgroundColor: "#4199d2"
     }
   return (
-    <>
     <div className='container'>
-    {/* <p className='adultContainer'>Adult</p> */}
       <MaterialTooltip title='25% of Food Consumption dedicated to Fruits/Veggies'>
       <div style={navy}></div>
       </MaterialTooltip>
@@ -29,7 +27,6 @@ const adultBar = () => {
       <div style={blue}></div>
       </MaterialTooltip>
     </div>
-    </>
   );
 }
 
