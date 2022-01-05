@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import logo from './logo.svg';
 import './App.css';
 import Data from './components/data';
 import ChildrenData from './components/childrenData';
@@ -7,27 +6,25 @@ import TeenagersData from './components/teenagersData';
 import AdultData from './components/adultData'
 import Legend from './components/legend'
 import {Select, MenuItem, FormControl, InputLabel, makeStyles} from "@material-ui/core"
+
 const useStyles = makeStyles(theme => ({
   formControl: {
-    minWidth: 100,
+    minWidth: 500,
   }
 }))
 
-
-function App() {
+const App = () => {
   const classes = useStyles()
   const [value, setValue] = useState("")
   const handleChange = e => setValue(e.target.value)
+ 
   return (
-    <div className="App">
-      
-
-        {/* <Data/> */}
+    <div>
         <div className='displayBar'>
         <FormControl className = {classes.formControl}>
           <InputLabel>Display</InputLabel>
         <Select onChange={handleChange}>
-          <MenuItem value={<Data />}>All</MenuItem>
+          <MenuItem value={<Data />} >All</MenuItem>
           <MenuItem value={<AdultData />}>Adults</MenuItem>
           <MenuItem value={<ChildrenData />}>Children</MenuItem>
           <MenuItem value={<TeenagersData />}>Teenagers</MenuItem>
@@ -41,8 +38,9 @@ function App() {
       <p>50%</p>
       <p>100%</p>
       </div>
-      <hr className='thin'/>
-      <p> {value}</p>
+      <div className='thin'/>
+      
+      <div>{value}</div>
     </div>
   );
 }

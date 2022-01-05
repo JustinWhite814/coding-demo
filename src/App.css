@@ -2,12 +2,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
 }
-
+.displayBar {
+  display: flex;
+  float: right;
+  
+}
 .legend {
   display:flex;
   width: 20%;
   padding: 2px;
   margin-left: 25%;
+  padding-top: 2%;
   padding-bottom: 2%;
 }
 .legendNavy {
@@ -48,13 +53,15 @@ p {
   padding-bottom: 1%;
   font-size: 15px;
 }
-hr.thin {
+div.thin {
     height: 1.5px;
     border: 0;
     color: grey;
     background-color: grey;
     width: 50%;
     padding-top: 0%;
+    margin: auto;
+    /* margin-left: 29.59%; */
     }
 
 .container {
@@ -64,19 +71,14 @@ hr.thin {
   margin: auto;
   padding-top: 10px;
 }
-.displayBar {
+.adultContainer {
+  width: 10%;
   display: flex;
+  height: 40px;
   margin: auto;
+  padding-top: 10px;
 }
-/* .navy{
-  width: 24%;
-  background-color: #092961;
+.container:hover {
+  opacity: 0.7;
+  
 }
-.grey {
-  width: 25%;
-  background-color: #a4b2c8 ;
-}
-.aquamarine{
-  width: 51%;
-  background-color: #4199d2 ;
-} */

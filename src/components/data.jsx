@@ -7,8 +7,8 @@ const data = () => {
   return (
     <div>
       <AdultData/> 
-      <ChildrenData />
       <TeenagersData />
+      <ChildrenData />
     </div>
   );
 }
