@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './App.css';
-import Legend from './components/legend'
 import {Select, MenuItem, FormControl, InputLabel, makeStyles} from "@material-ui/core"
 import BarGraph from './components/BarGraph'
+import Legend from './components/Legend'
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const fakeData = {
+const consumptionData = {
   Adults: {
     fruits: .25,
     grains: .25,
@@ -32,7 +32,7 @@ const App = () => {
   const classes = useStyles()
   const [value, setValue] = useState('All')
   const handleChange = e => setValue(e.target.value)
-  const data = fakeData[value]
+  const data = consumptionData[value]
   
   return (
     <div>
@@ -58,9 +58,9 @@ const App = () => {
       <div>
         {value === 'All' ? (
           <>
-            <BarGraph label="Adults" data={fakeData.Adults} />
-            <BarGraph label="Teenagers" data={fakeData.Teenagers} />
-            <BarGraph label="Children" data={fakeData.Children} />
+            <BarGraph label="Adults" data={consumptionData.Adults} />
+            <BarGraph label="Teenagers" data={consumptionData.Teenagers} />
+            <BarGraph label="Children" data={consumptionData.Children} />
           </>
         ) : <BarGraph label={value} data={data} />}
       </div>

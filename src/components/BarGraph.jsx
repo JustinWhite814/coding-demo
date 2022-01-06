@@ -26,27 +26,14 @@ function BarGraph({data, label}) {
       <Tooltip title={`${fruits*100} % of Food Consumption dedicated to Fruits/Veggies`}>
         <Segment color="#092961" width={fruits} />
       </Tooltip>
-
       <Tooltip title={`${grains*100} % of Food Consumption dedicated to Grains`} >
         <Segment color="#a4b2c8" width={grains} />
       </Tooltip>
-
       <Tooltip title={`${proteins*100} % of Food Consumption dedicated to Proteins`} >
         <Segment color="#4199d2" width={proteins} />
       </Tooltip>
     </div>
   );
 }
-
-
-/*
-  STYLED COMPONENT CODE:
-  const RedDiv = styled.div`
-    background: red;
-  `
-
-  USING THE STYLED COMPONENT:
-  <RedDiv>ABC</RedDiv>
-*/
 
 export default BarGraph;

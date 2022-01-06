@@ -1,13 +1,13 @@
 import React from 'react';
 
-const legend = () => {
+const Legend = () => {
   return (
     <div className='legend'>
-      <p className='legendNavy'></p><p className='legendItems'>Fruits/Vegetables</p> 
-      <p className='legendGrey'></p><p className='legendItems'>Grains</p> 
-      <p className='legendBlue'></p><p className='legendItems'>Proteins</p> 
+      <p className='legendNavy'/><p className='legendItems'>Fruits/Vegetables</p> 
+      <p className='legendGrey'/><p className='legendItems'>Grains</p> 
+      <p className='legendBlue'/><p className='legendItems'>Proteins</p> 
     </div>
   );
 }
 
-export default legend;
+export default Legend;

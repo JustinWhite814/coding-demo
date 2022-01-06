@@ -5,7 +5,6 @@ body {
 .displayBar {
   display: flex;
   float: right;
-  
 }
 .legend {
   display:flex;
@@ -18,23 +17,19 @@ body {
 .legendNavy {
   width: 10px;
   background-color: #092961;
-  
 }
 .legendGrey {
   width: 10px;
   background-color: #a4b2c8;
-  
 }
 .legendBlue {
   width: 10px;
-  background-color: #4199d2;
-  
+  background-color: #4199d2;  
 }
 .legendItems {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .numbersAboveLine {
   display: flex;
   justify-content: space-between;
@@ -62,7 +57,6 @@ div.thin {
     padding-top: 0%;
     margin: auto;
     }
-
 .container {
   width: 50%;
   display: flex;
@@ -71,10 +65,6 @@ div.thin {
   padding-top: 10px;
   position: relative;
 }
-
-  
-
 .container:hover {
   opacity: 0.7;
-  
 }
