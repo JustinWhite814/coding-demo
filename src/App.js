@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './App.css';
 import {Select, MenuItem, FormControl, InputLabel, makeStyles} from "@material-ui/core"
-import BarGraph from './components/BarGraph'
-import Legend from './components/Legend'
+import BarGraph from './components/BarGraph.jsx'
+import Legend from './components/Legend.jsx'
 const useStyles = makeStyles(theme => ({
   formControl: {
     minWidth: 500,
