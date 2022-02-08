@@ -23,13 +23,13 @@ function BarGraph({data, label}) {
   return (
     <div className="container">
       <Label>{label}</Label>
-      <Tooltip title={`${fruits*100} % of Food Consumption dedicated to Fruits/Veggies`}>
+      <Tooltip title={`${fruits * 100} % of Food Consumption dedicated to Fruits/Veggies`}>
         <Segment color="#092961" width={fruits} />
       </Tooltip>
-      <Tooltip title={`${grains*100} % of Food Consumption dedicated to Grains`} >
+      <Tooltip title={`${grains * 100} % of Food Consumption dedicated to Grains`} >
         <Segment color="#a4b2c8" width={grains} />
       </Tooltip>
-      <Tooltip title={`${proteins*100} % of Food Consumption dedicated to Proteins`} >
+      <Tooltip title={`${proteins * 100} % of Food Consumption dedicated to Proteins`} >
         <Segment color="#4199d2" width={proteins} />
       </Tooltip>
     </div>

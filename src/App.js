@@ -3,7 +3,6 @@ import './App.css';
 import {Select, MenuItem, FormControl, InputLabel, makeStyles} from "@material-ui/core"
 import BarGraph from './components/BarGraph'
 import Legend from './components/Legend'
-
 const useStyles = makeStyles(theme => ({
   formControl: {
     minWidth: 500,
