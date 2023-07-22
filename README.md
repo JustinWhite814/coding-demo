@@ -8,16 +8,17 @@
 
 ## Screen shots
 #### HomePage
-![HomePage](./images/)
+![HomePage](./public/images/Main.png)
 
 #### Adults
-![Adults](./images/)
+![Adults](./public/images/Adults.png)
 
 #### Teenagers
-![Teenagers](./images/)
+![Teenagers](./public/images/Teens.png)
 
 #### Children
-![Children](./images/)
+![Children](./public/images/Children.png)
+
 ## Installation Instructions
 * Fork this repository
 * Clone it down to your local machine
